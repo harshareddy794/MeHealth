@@ -1,0 +1,50 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+h3{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.stats{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.stats .card{
+    margin-left: auto;
+    width: 250px;
+    height: 125px;
+    border-radius: 15px;
+}
+
+.stats .card .head{
+    text-align: right;
+    margin-top: -30px;
+    margin-left: 15px;
+}
+
+.stats .card .gly{
+    font-size: 25px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 25%;
+    margin-top: -40px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.stats .card .body{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.graph{
+    width:90%;
+    margin-top: 50px;
+    margin-left: auto;
+
+}

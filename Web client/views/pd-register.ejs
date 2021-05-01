@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MeHealth</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<style>
+        .std{
+padding-top:3%;
+padding-bottom:10%;
+padding-left:26%;
+}
+.form{
+padding-top:4.3%;
+padding-bottom:7.5%;
+padding-left:18%;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+   <!-- Sidebar Holder start -->
+   <nav id="sidebar">
+    <div class="sidebar-header">
+        <h3><a class="hero-brand" href="/" title="Home"><img alt="MeHealth" src="img/logo.jpeg"></a></h3>
+    </div>
+
+    <ul class="list-unstyled components">
+        <li>
+            <a href="/home">Covid Data</a>
+        </li>
+        <li>
+            <a href="/covid/home">Covid Detection</a>
+        </li>
+        <li>
+        <li>
+            <a href="/covid/precautions">Precations</a>
+        </li>
+        <li>
+            <a href="/covid/after-precautions">Precations(after covid +ve)</a>
+        </li> 
+        <li>
+            <a href="/covid/plasma-donars">Plasma donars</a>
+        </li>                
+        </li>
+        <li>
+            <a href="/depression/home">Depression Detection</a>
+        </li>  
+        <li>
+            <a href="/mealone">Chat bot</a>  
+        </li>
+        <li>
+            <a href="/live-consultation">Live Consultation</a>
+        </li>
+    </ul>
+
+</nav>
+<!-- Sidebar Holder ends -->
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+           <div class="std">
+                <div class="container">
+                    <div class="card border-primary" style="max-width: 30rem;">
+                        <div class="card-header bg-transparent border-primary" ><h3>Plasma Donor</h3></div>
+                        <div class="card-body text-success">
+                            <form action="/covid/plasma-register" method="post">
+                                <div class="form-group">
+                                    <label>Name:</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Name">
+                                </div>     
+                                <div class="form-group">
+                                    <label>Blood Group:</label>
+                                    <select name="blood" class="form-control">
+                                        <option value=""></option>
+                                        <option value="O-Positive">O-Positive</option>
+                                        <option value="O-Negative">O-Negative</option>
+                                        <option value="A-Positive">A-Positive</option>
+                                        <option value="A-Negative">A-Negative</option>
+                                        <option value="B-Positive">B-Positive</option>
+                                        <option value="B-Negative">B-Negative</option>
+                                        <option value="AB-Positive">AB-Positive</option>
+                                        <option value="AB-Negative">AB-Negative</option>
+                                    </select>
+                                </div> 
+                                <div class="form-group">
+                                    <label>Contact Number:</label>
+                                    <input type="text" class="form-control" name="number" placeholder="Number">
+                                </div> 
+                                <div class="form-group">
+                                    <label>State:</label>
+                                    <select name="state" class="form-control">
+                                        <option value=""></option>
+                                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                        <option value="Assam">Assam</option>
+                                        <option value="Bihar">Bihar</option>
+                                        <option value="Chhattisgarh">Chhattisgarh</option>
+                                        <option value="Goa">Goa</option>
+                                        <option value="Gujarat">Gujarat</option>
+                                        <option value="Haryana">Haryana</option>
+                                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                        <option value="Jharkhand">Jharkhand</option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="Kerala">Kerala</option>
+                                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                        <option value="Maharashtra">Maharashtra</option>
+                                        <option value="Manipur">Manipur</option>
+                                        <option value="Meghalaya">Meghalaya</option>
+                                        <option value="Mizoram">Mizoram</option>
+                                        <option value="Nagaland">Nagaland</option>
+                                        <option value="Odisha">Odisha</option>
+                                        <option value="Punjab">Punjab</option>
+                                        <option value="Rajasthan">Rajasthan</option>
+                                        <option value="Sikkim">Sikkim</option>
+                                        <option value="Tamil Nadu">Tamil Nadu</option>
+                                        <option value="Telangana">Telangana</option>
+                                        <option value="Tripura">Tripura</option>
+                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                        <option value="Uttarakhand">Uttarakhand</option>
+                                        <option value="West Bengal">West Bengal</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Date of tested positive:</label>
+                                    <input type="date" class="form-control" placeholder="Date-Of-Birth(yy-mm-dd)" name="date" pattern="^[0-9]{4}-[0-1][0-9]-[0-3][0-9]$">
+                                </div>   
+                                <input class="btn btn-primary" type="submit" value="Submit">
+                            </form>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

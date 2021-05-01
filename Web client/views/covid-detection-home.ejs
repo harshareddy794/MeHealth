@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID DETECTION</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<style>
+  .label{
+      text-align: center;
+  }
+  h1{
+      padding-top: 2%;
+      text-align: center;
+  }
+  .form{
+      padding-top: 2%;
+      width: 60%;
+      margin-left: 20%;
+  }
+  .bth{
+      text-align: center;
+  }
+  .form-group{
+      margin-bottom: 15px;
+  }
+
+</style>
+
+<body class="body">
+  <h1>COVID DETECTION</h1>
+  <div class="form">
+      <form action="/covid/clasify" method="post">
+          <div class="breathing_problem">
+              <label for ="social media">Are you facing any difficulty while breathing?</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="breathing_problem" id="1" value="1">
+                    <label class="form-check-label" for="1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="breathing_problem" id="1" value="0">
+                    <label class="form-check-label" for="1">No</label>
+                </div>
+          </div>
+          <div class="fever">
+              <label for="person">Do you have fever?</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="fever" id="1" value="1">
+                    <label class="form-check-label" for="1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="fever" id="1" value="0">
+                    <label class="form-check-label" for="1">No</label>
+                </div>
+          </div>
+          <div class="dry_cough">
+              <label for="body issues">Do you have dry cough?</label> <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="dry_cough" id="1" value="1">
+                    <label class="form-check-label" for="1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="dry_cough" id="1" value="0">
+                    <label class="form-check-label" for="1">No</label>
+                </div>
+          </div>
+
+          <div class="sore_throat">
+              <label for="self confidence">Do you have sore throat?</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sore_throat" id="1" value="1">
+                    <label class="form-check-label" for="1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sore_throat" id="1" value="0">
+                    <label class="form-check-label" for="1">No</label>
+                </div>
+          </div>
+
+          <div class="running_nose">
+              <label for="life">Do you have running nose?</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="running_nose" id="1" value="1">
+                    <label class="form-check-label" for="1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="running_nose" id="1" value="0">
+                    <label class="form-check-label" for="1">No</label>
+                </div>
+          </div>
+
+          <div class="headache">
+              <label for ="social media">Are you suffering from headache ?</label><br>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="headache" id="1" value="1">
+                  <label class="form-check-label" for="1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="headache" id="1" value="0">
+                <label class="form-check-label" for="1">No</label>
+              </div>
+          </div>
+
+          <div class="abroad">
+              <label for ="social media">Had you been to abroad in last fifteen days?</label><br>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="abroad" id="1" value="1">
+                  <label class="form-check-label" for="1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="abroad" id="1" value="0">
+                <label class="form-check-label" for="1">No</label>
+              </div>
+          </div>
+
+          <div class="covid_contact">
+              <label for ="social media">Have you met anyone who is infected by covid 19?</label><br>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="covid_contact" id="1" value="1">
+                  <label class="form-check-label" for="1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="covid_contact" id="1" value="0">
+                <label class="form-check-label" for="1">No</label>
+              </div>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Submit">
+      </form>
+  </div>
+  <center>
+      <h3>TECH PIRATES</h3>
+  </center>
+</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</html>
