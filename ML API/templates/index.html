@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <style>
+        h1{
+            margin-top: 50px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 300;
+        }
+        h6{
+            margin: 0;
+        }
+        .table{
+            margin-top: 25px;
+        }
+        td.route{
+            font-weight: bold;
+        }
+        .success{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>API DOCUMENTATION</h1>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">End point</th>
+                <th scope="col">Method</th>
+                <th scope="col">Input</th>
+                <th scope="col">Output</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="route">/api/depression-detection</td>
+                    <td>POST</td>
+                    <td class="input">
+                        sm (Boolean) <br>
+                        person (Boolean) <br>
+                        issue (Boolean) <br>
+                        sc (Boolean) <br>
+                        life (Boolean) <br>
+                        depression (Boolean) <br>
+                    </td>
+                    <td class="output">
+                        <div class="success">
+                            <h6>Success</h6>
+                            "predection": 0, OR 1 (0 if not found 1 if found)<br>
+                            "response": 200, <br>
+                            "status": "success"
+                        </div>
+                        <div class="fail">
+                            <h6>Fail</h6>
+                            "predection": -1, <br>
+                            "response": 400, <br>
+                            "status": "Server error" <br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="route">/api/covid-detection</td>
+                    <td>POST</td>
+                    <td class="input">
+                        beathing_problem (Boolean) <br>
+                        fever (Boolean) <br>
+                        dry_caugh (Boolean) <br>
+                        sore_throat (Boolean) <br>
+                        running_nose (Boolean) <br>
+                        astama (Boolean) <br>
+                        chronic_l_disease (Boolean) <br>
+                        headach (Boolean) <br>
+                        heart_disease (Boolean) <br>
+                        diabetic (Boolean) <br>
+                        hyper_tension (Boolean) <br>
+                        fatigue (Boolean) <br>
+                        gas (Boolean) <br>
+                        abroad (Boolean) <br>
+                        covid_contact (Boolean) <br>
+                        gather (Boolean) <br>
+                        visit_public (Boolean) <br>
+                        work_public (Boolean) <br>
+                        mask (Boolean) <br>
+                        sanitize (Boolean) <br>
+                    </td>
+                    <td class="output">
+                        <div class="success">
+                            <h6>Success</h6>
+                            "predection": 0, OR 1 (0 if not found 1 if found)<br>
+                            "response": 200, <br>
+                            "status": "success"
+                        </div>
+                        <div class="fail">
+                            <h6>Fail</h6>
+                            "predection": -1, <br>
+                            "response": 400, <br>
+                            "status": "Server error" <br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="route">/api/jokes</td>
+                    <td>GET</td>
+                    <td class="input">
+                        None
+                    </td>
+                    <td class="output">
+                        <div class="success">
+                            <h6>Success</h6>
+                            "joke": joke(text)<br>
+                            "response": 200, <br>
+                            "status": "success"
+                        </div>
+                        <div class="fail">
+                            <h6>Fail</h6>
+                            "joke": -1, <br>
+                            "response": 400, <br>
+                            "status": "Server error" <br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="route">/api/facts</td>
+                    <td>GET</td>
+                    <td class="input">
+                        None
+                    </td>
+                    <td class="output">
+                        <div class="success">
+                            <h6>Success</h6>
+                            "fact": fact(text)<br>
+                            "response": 200, <br>
+                            "status": "success"
+                        </div>
+                        <div class="fail">
+                            <h6>Fail</h6>
+                            "fact": -1, <br>
+                            "response": 400, <br>
+                            "status": "Server error" <br>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
